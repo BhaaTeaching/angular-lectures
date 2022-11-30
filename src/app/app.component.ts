@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-lectures';
+  showTeams : boolean = false;
+
+  setShowTeams = (showTeams : boolean) => {
+    this.showTeams = showTeams;
+  }
 }
