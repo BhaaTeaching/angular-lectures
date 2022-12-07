@@ -1,3 +1,10 @@
+<p *ngIf="!skip">
+  We are living in uncertain times filled with conflicts and global crises. The world is divided.    <br/>
+  The FIFA World Cup, through the power of football, will bring people together to cross borders, unite and celebrate together. <br/>
+  Football Unites the World is a global movement to inspire, unite and develop through football.
+</p>
+
+
 <app-team *ngIf="showTeams" ></app-team>
 <app-remote (showTeams) = "setShowTeams($event)" test="test test"></app-remote>
 

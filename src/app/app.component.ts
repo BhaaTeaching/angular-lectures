@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import {TeamService} from "./team.service";
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   showTeams : boolean = false;
-
+  skip : boolean = false;
+  // constructor(private teamService : TeamService) {
+  //   this.teamService.skip.subscribe((skip : string) => this.skip = skip === 'skip')
+  // }
   setShowTeams = (showTeams : boolean) => {
     this.showTeams = showTeams;
   }

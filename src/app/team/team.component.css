@@ -2,14 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-style: dashed;
+  margin: 1rem;
 }
 
 ul {
   flex-grow: 1;
 }
 
-app-team-details {
+app-team-details, app-wins {
   flex-grow: 1;
   border-style: solid;
   margin: 1rem;
+  padding: 0.5rem;
+}
+
+.team-details-container {
+  display: flex;
+  flex-direction: column;
 }
