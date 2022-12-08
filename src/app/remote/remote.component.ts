@@ -8,6 +8,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 export class RemoteComponent implements OnInit {
 
   @Output() showTeams = new EventEmitter<boolean>();
+  @Output() skip = new EventEmitter<string>();
   @Input() test: string = '';
 
   disableButton : boolean = false;
@@ -23,6 +24,6 @@ export class RemoteComponent implements OnInit {
 
   skipText() {
     this.disableButton = true;
-    // this.teamService.skip.emit('skip')
+    this.skip.emit('skip')
   }
 }

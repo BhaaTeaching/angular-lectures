@@ -6,5 +6,5 @@
 
 
 <app-team *ngIf="showTeams" ></app-team>
-<app-remote (showTeams) = "setShowTeams($event)" test="test test"></app-remote>
+<app-remote (skip)="skipText($event)" (showTeams) = "setShowTeams($event)" test="test test"></app-remote>
 

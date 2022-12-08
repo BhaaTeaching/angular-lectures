@@ -15,4 +15,8 @@ export class AppComponent {
   setShowTeams = (showTeams : boolean) => {
     this.showTeams = showTeams;
   }
+
+  skipText(skip: string) {
+    this.skip = skip ==='skip'
+  }
 }

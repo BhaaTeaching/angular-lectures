@@ -1,10 +1,10 @@
-<div class="team-container" *ngFor="let team of teams.teams">
+<div class="team-container" *ngFor="let team of teams">
   <ul>
-    <li (click)="teams.onClick(team.name)">{{team.name}}</li>
+    <li (click)="onClick(team.name)">{{team.name}}</li>
   </ul>
   <div class="team-details-container">
-    <app-team-details *ngIf="teams.map.get(team.name)" [coach]="team.coach" [flag]="team.flag" ></app-team-details>
-    <app-wins *ngIf="teams.map.get(team.name)" [winsYears]="team.wins"></app-wins>
+    <app-team-details *ngIf="map.get(team.name)" [coach]="team.coach" [flag]="team.flag" ></app-team-details>
+    <app-wins *ngIf="map.get(team.name)" [winsYears]="team.wins"></app-wins>
   </div>
 </div>
 
